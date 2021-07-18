@@ -1,0 +1,48 @@
+/**
+ * React Native App
+ * Everything starts from the Entry-point
+ */
+import React from 'react';
+import { ActivityIndicator } from 'react-native';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/lib/integration/react';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+import {
+  PaperThemeDefault,
+  PaperThemeDark,
+  CombinedDefaultTheme,
+  CombinedDarkTheme,
+} from 'app/config/theme-config';
+import Navigator from 'app/navigation';
+import { store, persistor, useReduxSelector, useReduxDispatch } from './store';
+import { selectIsDarkTheme, selectTheme, setTheme } from './store/ducks/theme';
+
+const RootNavigation: React.FC = () => {
+  const isDark = useReduxSelector(selectIsDarkTheme);
+  const alreadyStored = useReduxSelector(selectTheme);
+  const paperTheme = isDark ? PaperThemeDark : PaperThemeDefault;
+  const combinedTheme = isDark ? CombinedDarkTheme : CombinedDefaultTheme;
+  const dispatch = useReduxDispatch();
+  if (!alreadyStored) {
+    dispatch(setTheme(combinedTheme));
+  }
+
+  return (
+    <PaperProvider theme={paperTheme}>
+      <Navigator theme={combinedTheme} />
+    </PaperProvider>
+  );
+};
+
+const EntryPoint: React.FC = () => {
+  return (
+    <Provider store={store}>
+      <PersistGate loading={<ActivityIndicator />} persistor={persistor}>
+        <RootNavigation />
+      </PersistGate>
+    </Provider>
+  );
+};
+
+export default EntryPoint;
