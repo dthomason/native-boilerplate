@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "reflectime.app"
-               BlueprintName = "reflectime"
-               ReferencedContainer = "container:reflectime.xcodeproj">
+               BuildableName = "native.app"
+               BlueprintName = "native"
+               ReferencedContainer = "container:native.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "reflectimeTests.xctest"
-               BlueprintName = "reflectimeTests"
-               ReferencedContainer = "container:reflectime.xcodeproj">
+               BuildableName = "nativeTests.xctest"
+               BlueprintName = "nativeTests"
+               ReferencedContainer = "container:native.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reflectime.app"
-            BlueprintName = "reflectime"
-            ReferencedContainer = "container:reflectime.xcodeproj">
+            BuildableName = "native.app"
+            BlueprintName = "native"
+            ReferencedContainer = "container:native.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "reflectime.app"
-            BlueprintName = "reflectime"
-            ReferencedContainer = "container:reflectime.xcodeproj">
+            BuildableName = "native.app"
+            BlueprintName = "native"
+            ReferencedContainer = "container:native.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* reflectimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reflectimeTests.m */; };
+		00E356F31AD99517003FC87E /* nativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* nativeTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8C0034E753E707BEC7F6C22E /* libPods-reflectime-reflectimeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEDA297F9E38174EFABD9F4 /* libPods-reflectime-reflectimeTests.a */; };
-		D377B620A197FE77DAEA05BD /* libPods-reflectime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44A80C424A9BAF97858DAB /* libPods-reflectime.a */; };
+		8C0034E753E707BEC7F6C22E /* libPods-native-nativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EEDA297F9E38174EFABD9F4 /* libPods-native-nativeTests.a */; };
+		D377B620A197FE77DAEA05BD /* libPods-native.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C44A80C424A9BAF97858DAB /* libPods-native.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,27 +22,27 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = reflectime;
+			remoteInfo = native;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* reflectimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reflectimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* nativeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nativeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* reflectimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reflectimeTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* reflectime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reflectime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = reflectime/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = reflectime/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reflectime/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reflectime/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reflectime/main.m; sourceTree = "<group>"; };
-		6380DA9E108DD561F30AD3C1 /* Pods-reflectime-reflectimeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reflectime-reflectimeTests.release.xcconfig"; path = "Target Support Files/Pods-reflectime-reflectimeTests/Pods-reflectime-reflectimeTests.release.xcconfig"; sourceTree = "<group>"; };
-		6714FE58BD3310A8ED341F09 /* Pods-reflectime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reflectime.debug.xcconfig"; path = "Target Support Files/Pods-reflectime/Pods-reflectime.debug.xcconfig"; sourceTree = "<group>"; };
-		6EEDA297F9E38174EFABD9F4 /* libPods-reflectime-reflectimeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reflectime-reflectimeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C44A80C424A9BAF97858DAB /* libPods-reflectime.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reflectime.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = reflectime/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9DA2E65FB2FC3D85825B9BEC /* Pods-reflectime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reflectime.release.xcconfig"; path = "Target Support Files/Pods-reflectime/Pods-reflectime.release.xcconfig"; sourceTree = "<group>"; };
-		D43AD0A9557CD35E97F2C388 /* Pods-reflectime-reflectimeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reflectime-reflectimeTests.debug.xcconfig"; path = "Target Support Files/Pods-reflectime-reflectimeTests/Pods-reflectime-reflectimeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* nativeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nativeTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = native.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = native/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = native/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = native/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = native/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = native/main.m; sourceTree = "<group>"; };
+		6380DA9E108DD561F30AD3C1 /* Pods-native-nativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native-nativeTests.release.xcconfig"; path = "Target Support Files/Pods-native-nativeTests/Pods-native-nativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		6714FE58BD3310A8ED341F09 /* Pods-native.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native.debug.xcconfig"; path = "Target Support Files/Pods-native/Pods-native.debug.xcconfig"; sourceTree = "<group>"; };
+		6EEDA297F9E38174EFABD9F4 /* libPods-native-nativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native-nativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C44A80C424A9BAF97858DAB /* libPods-native.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-native.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = native/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA2E65FB2FC3D85825B9BEC /* Pods-native.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native.release.xcconfig"; path = "Target Support Files/Pods-native/Pods-native.release.xcconfig"; sourceTree = "<group>"; };
+		D43AD0A9557CD35E97F2C388 /* Pods-native-nativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-native-nativeTests.debug.xcconfig"; path = "Target Support Files/Pods-native-nativeTests/Pods-native-nativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C0034E753E707BEC7F6C22E /* libPods-reflectime-reflectimeTests.a in Frameworks */,
+				8C0034E753E707BEC7F6C22E /* libPods-native-nativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,20 +59,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D377B620A197FE77DAEA05BD /* libPods-reflectime.a in Frameworks */,
+				D377B620A197FE77DAEA05BD /* libPods-native.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* reflectimeTests */ = {
+		00E356EF1AD99517003FC87E /* nativeTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* reflectimeTests.m */,
+				00E356F21AD99517003FC87E /* nativeTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = reflectimeTests;
+			path = nativeTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -83,7 +83,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* reflectime */ = {
+		13B07FAE1A68108700A75B9A /* native */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -93,16 +93,16 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = reflectime;
+			name = native;
 			sourceTree = "<group>";
 		};
 		244F76ECE4F9D42F4415AFD7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6714FE58BD3310A8ED341F09 /* Pods-reflectime.debug.xcconfig */,
-				9DA2E65FB2FC3D85825B9BEC /* Pods-reflectime.release.xcconfig */,
-				D43AD0A9557CD35E97F2C388 /* Pods-reflectime-reflectimeTests.debug.xcconfig */,
-				6380DA9E108DD561F30AD3C1 /* Pods-reflectime-reflectimeTests.release.xcconfig */,
+				6714FE58BD3310A8ED341F09 /* Pods-native.debug.xcconfig */,
+				9DA2E65FB2FC3D85825B9BEC /* Pods-native.release.xcconfig */,
+				D43AD0A9557CD35E97F2C388 /* Pods-native-nativeTests.debug.xcconfig */,
+				6380DA9E108DD561F30AD3C1 /* Pods-native-nativeTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -112,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				7C44A80C424A9BAF97858DAB /* libPods-reflectime.a */,
-				6EEDA297F9E38174EFABD9F4 /* libPods-reflectime-reflectimeTests.a */,
+				7C44A80C424A9BAF97858DAB /* libPods-native.a */,
+				6EEDA297F9E38174EFABD9F4 /* libPods-native-nativeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* reflectime */,
+				13B07FAE1A68108700A75B9A /* native */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* reflectimeTests */,
+				00E356EF1AD99517003FC87E /* nativeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				244F76ECE4F9D42F4415AFD7 /* Pods */,
@@ -143,8 +143,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* reflectime.app */,
-				00E356EE1AD99517003FC87E /* reflectimeTests.xctest */,
+				13B07F961A680F5B00A75B9A /* native.app */,
+				00E356EE1AD99517003FC87E /* nativeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* reflectimeTests */ = {
+		00E356ED1AD99517003FC87E /* nativeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reflectimeTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "nativeTests" */;
 			buildPhases = (
 				A5B92A2136080137912FD921 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -167,14 +167,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = reflectimeTests;
-			productName = reflectimeTests;
-			productReference = 00E356EE1AD99517003FC87E /* reflectimeTests.xctest */;
+			name = nativeTests;
+			productName = nativeTests;
+			productReference = 00E356EE1AD99517003FC87E /* nativeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* reflectime */ = {
+		13B07F861A680F5B00A75B9A /* native */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reflectime" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "native" */;
 			buildPhases = (
 				CA8864E0BBE8269DF8F4C369 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -188,9 +188,9 @@
 			);
 			dependencies = (
 			);
-			name = reflectime;
-			productName = reflectime;
-			productReference = 13B07F961A680F5B00A75B9A /* reflectime.app */;
+			name = native;
+			productName = native;
+			productReference = 13B07F961A680F5B00A75B9A /* native.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reflectime" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "native" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,8 +223,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* reflectime */,
-				00E356ED1AD99517003FC87E /* reflectimeTests */,
+				13B07F861A680F5B00A75B9A /* native */,
+				00E356ED1AD99517003FC87E /* nativeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -269,15 +269,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-reflectime/Pods-reflectime-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-native/Pods-native-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-reflectime/Pods-reflectime-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-native/Pods-native-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reflectime/Pods-reflectime-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-native/Pods-native-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A5B92A2136080137912FD921 /* [CP] Check Pods Manifest.lock */ = {
@@ -295,7 +295,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reflectime-reflectimeTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-native-nativeTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -308,15 +308,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-reflectime-reflectimeTests/Pods-reflectime-reflectimeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-native-nativeTests/Pods-native-nativeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-reflectime-reflectimeTests/Pods-reflectime-reflectimeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-native-nativeTests/Pods-native-nativeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reflectime-reflectimeTests/Pods-reflectime-reflectimeTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-native-nativeTests/Pods-native-nativeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CA8864E0BBE8269DF8F4C369 /* [CP] Check Pods Manifest.lock */ = {
@@ -334,7 +334,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reflectime-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-native-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -367,7 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* reflectimeTests.m in Sources */,
+				00E356F31AD99517003FC87E /* nativeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +385,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* reflectime */;
+			target = 13B07F861A680F5B00A75B9A /* native */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,14 +393,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D43AD0A9557CD35E97F2C388 /* Pods-reflectime-reflectimeTests.debug.xcconfig */;
+			baseConfigurationReference = D43AD0A9557CD35E97F2C388 /* Pods-native-nativeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = reflectimeTests/Info.plist;
+				INFOPLIST_FILE = nativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,17 +414,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reflectime.app/reflectime";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/native.app/native";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6380DA9E108DD561F30AD3C1 /* Pods-reflectime-reflectimeTests.release.xcconfig */;
+			baseConfigurationReference = 6380DA9E108DD561F30AD3C1 /* Pods-native-nativeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = reflectimeTests/Info.plist;
+				INFOPLIST_FILE = nativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,19 +438,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reflectime.app/reflectime";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/native.app/native";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6714FE58BD3310A8ED341F09 /* Pods-reflectime.debug.xcconfig */;
+			baseConfigurationReference = 6714FE58BD3310A8ED341F09 /* Pods-native.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = reflectime/Info.plist;
+				INFOPLIST_FILE = native/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,7 +461,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = reflectime;
+				PRODUCT_NAME = native;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -470,12 +470,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DA2E65FB2FC3D85825B9BEC /* Pods-reflectime.release.xcconfig */;
+			baseConfigurationReference = 9DA2E65FB2FC3D85825B9BEC /* Pods-native.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = reflectime/Info.plist;
+				INFOPLIST_FILE = native/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +486,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = reflectime;
+				PRODUCT_NAME = native;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -618,7 +618,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reflectimeTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "nativeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -627,7 +627,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reflectime" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "native" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -636,7 +636,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reflectime" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "native" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
