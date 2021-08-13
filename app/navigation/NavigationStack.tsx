@@ -9,24 +9,43 @@ import {
   StackNavigationProp,
 } from '@react-navigation/stack';
 
+import {
+  createDrawerNavigator,
+  DrawerNavigationProp,
+} from '@react-navigation/drawer';
+
 import { navigationRef } from './NavigationService';
 
 import { ThemeController } from '../components';
 import { StatusBar } from 'react-native';
-import { Splash, SignIn, SignUp, ForgotPassword, Home } from 'app/screens';
+import {
+  Splash,
+  SignIn,
+  SignUp,
+  ForgotPassword,
+  Home,
+  Settings,
+} from 'app/screens';
 import { useReduxSelector } from '../store';
 import { selectLogin } from 'app/store/ducks';
 
 const Stack = createStackNavigator();
 const AuthStack = createStackNavigator<AuthParamList>();
-const AppStack = createStackNavigator<AppParamList>();
+// const AppStack = createStackNavigator<AppParamList>();
+const AppStack = createDrawerNavigator<AppParamList>();
 
 type AppParamList = {
-  Home: undefined;
+  Feed: undefined;
+  Settings: undefined;
 };
 
+// export type AppNavProps<T extends keyof AppParamList> = {
+//   navigation: StackNavigationProp<AppParamList, T>;
+//   route: RouteProp<AppParamList, T>;
+// };
+
 export type AppNavProps<T extends keyof AppParamList> = {
-  navigation: StackNavigationProp<AppParamList, T>;
+  navigation: DrawerNavigationProp<AppParamList, T>;
   route: RouteProp<AppParamList, T>;
 };
 
@@ -68,7 +87,9 @@ const AuthNavigator: FC<
   const isLoggedIn = useReduxSelector(selectLogin);
 
   return (
-    <AuthStack.Navigator initialRouteName="Splash">
+    <AuthStack.Navigator
+      initialRouteName="Splash"
+      screenOptions={{ headerShown: false }}>
       <Stack.Screen
         name="SignIn"
         component={SignIn}
@@ -105,9 +126,9 @@ const AuthNavigator: FC<
   );
 };
 
-const AppNavigator = () => (
-  <AppStack.Navigator>
-    <Stack.Screen name="Home" component={Home} options={homeOptions} />
+const AppNavigator: FC<AppNavProps<'Settings'>> = props => (
+  <AppStack.Navigator drawerContent={() => <Settings {...props} />}>
+    <Stack.Screen name="Feed" component={Home} options={homeOptions} />
   </AppStack.Navigator>
 );
 
@@ -119,7 +140,7 @@ const App: React.FC<IProps> = (props: IProps) => {
     <NavigationContainer ref={navigationRef} theme={theme}>
       <StatusBar barStyle={theme.dark ? 'light-content' : 'dark-content'} />
 
-      <Stack.Navigator headerMode="none">
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         {isLoggedIn ? (
           <Stack.Screen
             name="Home"
