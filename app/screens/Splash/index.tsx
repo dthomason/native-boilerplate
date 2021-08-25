@@ -1,6 +1,5 @@
 import React, { FC, useCallback } from 'react';
 import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native';
-import { useFocusEffect } from '@react-navigation/native';
 import { AuthNavProps } from 'app/navigation/NavigationStack';
 
 export const Splash: FC<AuthNavProps<'Splash'>> = ({
@@ -9,16 +8,6 @@ export const Splash: FC<AuthNavProps<'Splash'>> = ({
   const navigate = useCallback(
     () => navigation.navigate('SignIn'),
     [navigation],
-  );
-
-  useFocusEffect(
-    useCallback(() => {
-      const navigationTimer = setTimeout(() => {
-        navigate();
-      }, 3000);
-
-      return (): void => clearTimeout(navigationTimer);
-    }, [navigate]),
   );
 
   return (
@@ -51,5 +40,8 @@ const styles = StyleSheet.create({
     paddingRight: '3%',
     alignItems: 'flex-end',
     justifyContent: 'center',
+  },
+  container: {
+    backgroundColor: 'black',
   },
 });
