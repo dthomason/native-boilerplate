@@ -17,8 +17,8 @@ export const UserForm: FC<Props> = ({
   submitHandler,
   label,
 }): React.ReactElement => {
-  const [email, setEmail] = useState('hans@wurst.de');
-  const [password, setPassword] = useState('wiener');
+  const [email, setEmail] = useState('dave@me.com');
+  const [password, setPassword] = useState('user');
 
   const isLoading = useReduxSelector(selectIsSubmitting);
   const loginMessage = useReduxSelector(selectLoginMessage);

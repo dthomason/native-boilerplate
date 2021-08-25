@@ -8,11 +8,15 @@ import {
   createStackNavigator,
   StackNavigationProp,
 } from '@react-navigation/stack';
-
+import {
+  createBottomTabNavigator,
+  BottomTabNavigationProp,
+} from '@react-navigation/bottom-tabs';
 import {
   createDrawerNavigator,
   DrawerNavigationProp,
 } from '@react-navigation/drawer';
+import FeatherIcons from 'react-native-vector-icons/Feather';
 
 import { navigationRef } from './NavigationService';
 
@@ -31,21 +35,21 @@ import { selectLogin } from 'app/store/ducks';
 
 const Stack = createStackNavigator();
 const AuthStack = createStackNavigator<AuthParamList>();
-// const AppStack = createStackNavigator<AppParamList>();
 const AppStack = createDrawerNavigator<AppParamList>();
 
 type AppParamList = {
   Feed: undefined;
+  Home: undefined;
   Settings: undefined;
 };
 
-// export type AppNavProps<T extends keyof AppParamList> = {
-//   navigation: StackNavigationProp<AppParamList, T>;
-//   route: RouteProp<AppParamList, T>;
-// };
+export type AppScreens = 'Feed' | 'Home' | 'Settings';
 
 export type AppNavProps<T extends keyof AppParamList> = {
-  navigation: DrawerNavigationProp<AppParamList, T>;
+  navigation:
+    | DrawerNavigationProp<AppParamList, T>
+    | BottomTabNavigationProp<AppParamList, T>
+    | StackNavigationProp<AppParamList, T>;
   route: RouteProp<AppParamList, T>;
 };
 
@@ -59,22 +63,6 @@ type AuthParamList = {
 export type AuthNavProps<T extends keyof AuthParamList> = {
   navigation: StackNavigationProp<AuthParamList, T>;
   route: RouteProp<AuthParamList, T>;
-};
-
-interface HomeOptions {
-  title: 'Home';
-  headerTitleStyle: {
-    fontWeight: 'bold';
-  };
-  headerRight: () => JSX.Element;
-}
-
-const homeOptions: HomeOptions = {
-  title: 'Home',
-  headerTitleStyle: {
-    fontWeight: 'bold',
-  },
-  headerRight: () => <ThemeController />,
 };
 
 interface IProps {
@@ -126,9 +114,26 @@ const AuthNavigator: FC<
   );
 };
 
-const AppNavigator: FC<AppNavProps<'Settings'>> = props => (
+const Tab = createBottomTabNavigator<AppParamList>();
+
+const TabNavigator: FC<AppNavProps<'Feed'>> = props => (
+  <Tab.Navigator screenOptions={{ headerShown: false }} {...props}>
+    <Tab.Screen
+      name="Feed"
+      component={Home}
+      options={{
+        tabBarLabel: 'Home',
+        tabBarIcon: ({ color, size }) => (
+          <FeatherIcons name="home" color={color} size={size} />
+        ),
+      }}
+    />
+  </Tab.Navigator>
+);
+
+const DrawerNavigator: FC<AppNavProps<AppScreens>> = props => (
   <AppStack.Navigator drawerContent={() => <Settings {...props} />}>
-    <Stack.Screen name="Feed" component={Home} options={homeOptions} />
+    <AppStack.Screen name="Home" component={TabNavigator} />
   </AppStack.Navigator>
 );
 
@@ -142,11 +147,7 @@ const App: React.FC<IProps> = (props: IProps) => {
 
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {isLoggedIn ? (
-          <Stack.Screen
-            name="Home"
-            component={AppNavigator}
-            options={homeOptions}
-          />
+          <Stack.Screen name="Home" component={DrawerNavigator} />
         ) : (
           <Stack.Screen
             name="Login"

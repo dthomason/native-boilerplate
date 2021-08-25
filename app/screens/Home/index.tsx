@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { Button } from 'react-native-paper';
 
 import { useDispatch } from 'react-redux';
@@ -12,6 +12,7 @@ export const Home: React.FC<AppNavProps<'Feed'>> = () => {
 
   return (
     <View style={styles.container}>
+      <Text>HOME!</Text>
       <Button icon="logout" mode="contained" onPress={onLogout}>
         Logout
       </Button>

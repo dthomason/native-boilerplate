@@ -3,10 +3,10 @@ import { StyleSheet, View } from 'react-native';
 import { Button } from 'react-native-paper';
 
 import { useDispatch } from 'react-redux';
-import { AppNavProps } from 'app/navigation/NavigationStack';
+import { AppNavProps, AppScreens } from 'app/navigation/NavigationStack';
 import { setLogout } from 'app/store/ducks/user';
 
-export const Settings: React.FC<AppNavProps<'Settings'>> = () => {
+export const Settings: React.FC<AppNavProps<AppScreens>> = () => {
   const dispatch = useDispatch();
   const onLogout = () => dispatch(setLogout('loggedOut', 'Thank you'));
 
