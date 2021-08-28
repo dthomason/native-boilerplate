@@ -1,9 +1,10 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Theme } from 'react-native-paper/lib/typescript/types';
 import { RootState } from '../index';
 
-interface ThemeState {
+export interface ThemeState {
   isDark: boolean;
-  theme: any;
+  theme: Theme;
 }
 
 const initialState = { isDark: false, theme: {} } as ThemeState;
@@ -24,5 +25,5 @@ const themeSlice = createSlice({
 export const { setIsDarkTheme, setTheme } = themeSlice.actions;
 export const selectIsDarkTheme = (state: RootState): boolean =>
   state.theme.isDark;
-export const selectTheme = (state: RootState): boolean => state.theme.theme;
+export const selectTheme = (state: RootState): Theme => state.theme.theme;
 export default themeSlice.reducer;

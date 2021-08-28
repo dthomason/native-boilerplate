@@ -5,6 +5,7 @@ import { Button } from 'react-native-paper';
 import { useDispatch } from 'react-redux';
 import { AppNavProps } from 'app/navigation/NavigationStack';
 import { setLogout } from 'app/store/ducks/user';
+import { LinearGradient } from 'react-native-svg';
 
 export const Home: React.FC<AppNavProps<'Feed'>> = () => {
   const dispatch = useDispatch();
@@ -12,6 +13,10 @@ export const Home: React.FC<AppNavProps<'Feed'>> = () => {
 
   return (
     <View style={styles.container}>
+      <View>
+        <Text>See this</Text>
+        <LinearGradient />
+      </View>
       <Text>HOME!</Text>
       <Button icon="logout" mode="contained" onPress={onLogout}>
         Logout

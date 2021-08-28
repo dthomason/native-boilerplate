@@ -22,16 +22,10 @@ import { navigationRef } from './NavigationService';
 
 import { ThemeController } from '../components';
 import { StatusBar } from 'react-native';
-import {
-  Splash,
-  SignIn,
-  SignUp,
-  ForgotPassword,
-  Home,
-  Settings,
-} from 'app/screens';
+import { SignIn, SignUp, ForgotPassword, Home, Settings } from 'app/screens';
 import { useReduxSelector } from '../store';
 import { selectLogin } from 'app/store/ducks';
+import { SplashNew } from 'app/screens/Splash/SplashNew';
 
 const Stack = createStackNavigator();
 const AuthStack = createStackNavigator<AuthParamList>();
@@ -96,7 +90,7 @@ const AuthNavigator: FC<
       />
       <Stack.Screen
         name="Splash"
-        component={Splash}
+        component={SplashNew}
         options={{
           animationTypeForReplace: isLoggedIn ? 'push' : 'pop',
           headerRight: () => <ThemeController />,

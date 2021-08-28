@@ -5,6 +5,7 @@ import { Button } from 'react-native-paper';
 import { useDispatch } from 'react-redux';
 import { AppNavProps, AppScreens } from 'app/navigation/NavigationStack';
 import { setLogout } from 'app/store/ducks/user';
+import { ThemeController } from 'app/components/themeController';
 
 export const Settings: React.FC<AppNavProps<AppScreens>> = () => {
   const dispatch = useDispatch();
@@ -12,6 +13,7 @@ export const Settings: React.FC<AppNavProps<AppScreens>> = () => {
 
   return (
     <View style={styles.container}>
+      <ThemeController />
       <Button icon="logout" mode="outlined" onPress={onLogout}>
         Settings
       </Button>

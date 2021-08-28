@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { View, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Switch } from 'react-native-paper';
@@ -7,7 +7,7 @@ import { setIsDarkTheme } from '../store/ducks/theme';
 import { useReduxDispatch, useReduxSelector } from '../store';
 import { selectIsDarkTheme } from 'app/store/ducks/theme';
 
-export const ThemeController: React.FC = () => {
+export const ThemeController: FC = () => {
   const isDark = useReduxSelector(selectIsDarkTheme);
 
   console.log({ isDark });
